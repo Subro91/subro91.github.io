@@ -176,6 +176,7 @@ section {
   content: "\f141";
   /* hamburger icon */
   font-size: 1.25rem;
+  font-weight: 900;
   display: block;
   color: var(--color-light);
   line-height: 2rem;
@@ -186,6 +187,7 @@ section {
   content: "\f00d";
   /* close icon */
   font-size: 1.25rem;
+  font-weight: 900;
   display: block;
   color: var(--color-light);
   line-height: 32px;
@@ -392,70 +394,76 @@ section {
 #home {
   width: auto;
   height: 100vh;
-}
-
-/* .profile-image {
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  left: 32%;
-  top: 10%;
-  overflow: visible;
-}
-
-.profile-image-inner {
-  overflow: visible;
-  position: absolute;
-  width: 250px;
-  height: 240px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 52.7584, 60.613) rotate(30deg);
-  transform-origin: center;
-  left: 0;
-  top: 0;
-} */
-
-.hexagon-profile {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(120deg);
-  width: 400px;
-  height: 200px;
-  background: transparent;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.hexagon-profile-inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transform: rotate(-60deg);
-  background: transparent;
-  overflow: hidden;
-}
-
-.hexagon-profile-inner-in {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transform: rotate(-60deg);
-  background: url(../img/profile-image.jpg);
-  background-size: 100% 100%;
-  background-position: center;
-  overflow: hidden;
+  position: relative;
 }
 
 
 .home-text {
-  /* position: absolute; */
-  top: 50%;
-  left: 40%;
+  position: relative;
+  top: 20%;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-light);
 }
 
+.home-text h1 {
+  font-size: 3.5rem;
+}
+
+.home-text h2 {
+  font-size: 2.8rem;
+}
+
+
+.down-wheel,
+.down-wheel::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down-wheel {
+  width: 2.2rem;
+  height: 4rem;
+  border: 2px solid #fff;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  bottom: 2rem;
+}
+
+.down-wheel::before {
+  font-family: "Font Awesome 5 free";
+  content: "\f078";
+  font-weight: 900;
+  color: white;
+  /* width: .5rem;
+    height: .5rem;
+    background: #fff;
+    border-radius: 50%; */
+  margin-left: -.42rem;
+  top: 1rem;
+  animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
+}
+
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.5);
+  }
+
+}
 
 
 

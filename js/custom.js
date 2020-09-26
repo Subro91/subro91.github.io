@@ -141,13 +141,9 @@ $(document).ready(function () {
 
 
 
-/*===== OPTIONAL REFRESH PAGE AT THE TOP OF DOCUMENT LOAD INSTEAD OF AT # (HASH) =====
+/*===== OPTIONAL REFRESH PAGE AT THE TOP OF DOCUMENT LOAD INSTEAD OF AT # (HASH) =====*/
 $(document).ready(function () {
   $("html,body").animate({
     scrollTop: 0
   }, 500);
-});*/
-
-
-
-
+});
