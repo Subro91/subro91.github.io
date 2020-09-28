@@ -291,7 +291,6 @@ section {
 .menu-dropdown li:hover .icon {
   color: var(--color-light);
   right: 1.5rem;
-
 }
 
 
@@ -425,7 +424,7 @@ section {
 .down-wheel {
   width: 2.2rem;
   height: 4rem;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   border-radius: 1.5rem;
   cursor: pointer;
   bottom: 2rem;
@@ -434,6 +433,7 @@ section {
 .down-wheel::before {
   font-family: "Font Awesome 5 free";
   content: "\f078";
+  font-size: 1rem;
   font-weight: 900;
   color: white;
   /* width: .5rem;
@@ -1202,6 +1202,58 @@ footer {
 /* [XS]Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
+  .hamburger {
+    width: 2.5rem;
+    height: 3.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .menu {
+    width: 8.5rem;
+    left: -6rem;
+  }
+
+  .menu a {
+    font-size: 0.8rem;
+    padding: .7rem;
+    white-space: inherit;
+    line-height: 1.25rem;
+  }
+
+  .menu a.logotype {
+    font-size: 1.2rem;
+    top: 0rem;
+    padding: 0.6rem;
+    left: 2.5rem;
+  }
+
+  .menu .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.6rem;
+    right: 0.6rem;
+  }
+
+  .menu .icon [class*=fa-] {
+    font-size: 0.9rem;
+  }
+
+  .menu-dropdown li:hover .icon {
+    right: 1rem;
+  }
+
+  .openNav .menu:hover {
+    position: absolute;
+    left: -6rem;
+  }
+
+  .openNav .menu {
+    transform: translate3d(6rem, 0, 0);
+  }
+
+
+
+  /* --About-- */
   #about .about-photo img {
     width: 50%;
   }
