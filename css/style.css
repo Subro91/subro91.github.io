@@ -217,7 +217,7 @@ section {
   font-family: var(--staat);
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
   top: .25rem;
   left: 4.25rem;
   display: block;
@@ -1280,14 +1280,15 @@ footer {
 
   /* --Work-- */
   #work .timeline ul {
-    padding: 3.5rem 2.5rem;
+    padding: 4rem 2.5rem 2rem 2.5rem;
     width: 100%;
   }
+
 
   .timeline li.date::before {
     left: 0rem;
     text-align: left;
-    top: -1rem;
+    top: -1.5rem;
   }
 
   .timeline li.date::after {
@@ -1295,7 +1296,7 @@ footer {
     width: 0.8rem;
     height: 0.8rem;
     left: -1.5rem;
-    top: -1rem;
+    top: -1.5rem;
   }
 
 
@@ -1305,6 +1306,11 @@ footer {
 
   #contact .contact-details {
     padding-bottom: 1rem;
+  }
+
+  #contact .social-area {
+    display: block !important;
+    padding: 0.8rem 1rem;
   }
 
 
