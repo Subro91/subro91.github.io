@@ -1262,7 +1262,12 @@ footer {
     margin-top: 1rem;
   }
 
+  .btn-site {
+    display: block;
+  }
 
+
+  /* --Languages-- */
   #languages .pie-box {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1273,9 +1278,24 @@ footer {
     margin-top: 1rem;
   }
 
-
+  /* --Work-- */
   #work .timeline ul {
-    padding: 3.125rem 2rem 3.125rem 3.125rem;
+    padding: 3.5rem 2.5rem;
+    width: 100%;
+  }
+
+  .timeline li.date::before {
+    left: 0rem;
+    text-align: left;
+    top: -1rem;
+  }
+
+  .timeline li.date::after {
+    box-shadow: 0 0 0 2px var(--color-btn-bg);
+    width: 0.8rem;
+    height: 0.8rem;
+    left: -1.5rem;
+    top: -1rem;
   }
 
 
