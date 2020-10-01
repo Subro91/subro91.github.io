@@ -125,18 +125,18 @@ $(document).ready(function () {
 
 
 
-// Contact Maps Popup
-$(document).ready(function () {
-  $('.popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
+// // Contact Maps Popup
+// $(document).ready(function () {
+//   $('.popup-gmaps').magnificPopup({
+//     disableOn: 700,
+//     type: 'iframe',
+//     mainClass: 'mfp-fade',
+//     removalDelay: 160,
+//     preloader: false,
 
-    fixedContentPos: false
-  });
-});
+//     fixedContentPos: false
+//   });
+// });
 
 
 
